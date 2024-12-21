@@ -1,0 +1,57 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6; /* Improve readability */
+  font-size: 16px; /* Set base font size */
+  overflow-x: hidden; /* Prevent horizontal scroll caused by accidental overflow */
+}
+
+/* Additional Enhancements */
+html {
+  scroll-behavior: smooth; /* Smooth scrolling for better UX */
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #222; /* Slightly darker for better contrast */
+  margin-top: 0; /* Ensure no extra spacing above headers */
+}
+
+p {
+  margin: 0 0 1.5em; /* Add spacing between paragraphs */
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Consistent box-sizing across all elements */
+}
+
+/* Images and Media */
+img {
+  max-width: 100%; /* Ensure images scale responsively */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevent inline spacing below images */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Adjust font size for smaller devices */
+  }
+}
