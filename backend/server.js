@@ -8,6 +8,11 @@ const feedbackRoutes = require('./routes/feedbackRoutes');
 
 const app = express();
 
+app.get('/', (req, res) => {
+    res.send('Welcome to the Backend Server!');
+});
+
+
 // Middleware
 app.use(cors());
 app.use(express.json());
