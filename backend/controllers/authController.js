@@ -1,3 +1,5 @@
+// File: controllers/authcontroller.js
+
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 const bcrypt = require('bcryptjs');
@@ -29,6 +31,7 @@ exports.register = async (req, res) => {
   }
 };
 
+// Login a user
 exports.login = async (req, res) => {
   const { email, password } = req.body;
 
@@ -46,4 +49,3 @@ exports.login = async (req, res) => {
     res.status(500).json({ error: 'Server error' });
   }
 };
-
